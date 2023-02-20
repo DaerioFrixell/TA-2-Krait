@@ -181,11 +181,11 @@ input {
 }
 
 .icon-location {
-  background: url("../img/location.svg") no-repeat;
+  background: url("../img//location.svg") no-repeat;
 }
 
 .icon-location-arrow {
-  background: url("../img/location-arrow.svg") no-repeat;
+  background: url("../img//location-arrow.svg") no-repeat;
   margin-top: 0.5rem;
   margin-right: 0;
   margin-left: 1rem;
@@ -194,30 +194,30 @@ input {
 }
 
 .icon-phone {
-  background: url("../img/phone.svg");
+  background: url("../img//phone.svg");
 }
 
 .icon-search {
-  background: url("../img/search.svg") no-repeat;
+  background: url("../img//search.svg") no-repeat;
   width: 1.6rem;
   height: 1.6rem;
 }
 
 .icon-favorite {
-  background: url("../img/coolicon.svg") no-repeat;
+  background: url("../img//coolicon.svg") no-repeat;
   width: 1.6rem;
   height: 1.6rem;
   width: 1.8rem;
 }
 
 .icon-chart {
-  background: url("../img/chart.svg") no-repeat;
+  background: url("../img//chart.svg") no-repeat;
   width: 1.6rem;
   height: 1.6rem;
 }
 
 .icon-bag {
-  background: url("../img/bag.svg") no-repeat;
+  background: url("../img//bag.svg") no-repeat;
   width: 1.6rem;
   height: 1.6rem;
 }
@@ -277,7 +277,7 @@ input {
 }
 
 .main-page__handler--btn {
-  background: url("../img/btn-checkout.svg") no-repeat;
+  background: url("../img//btn-checkout.svg") no-repeat;
   width: 8px;
   height: 8px;
   -webkit-transition: 0.2s ease;
@@ -286,11 +286,11 @@ input {
 }
 
 .main-page__handler--btn:hover {
-  background: url("../img/btn-active.svg");
+  background: url("../img//btn-active.svg");
 }
 
 .main-page__handler--btnactive {
-  background: url("../img/btn-active.svg") no-repeat;
+  background: url("../img//btn-active.svg") no-repeat;
   width: 8px;
   height: 8px;
 }
@@ -312,7 +312,7 @@ input {
 }
 
 .main-page__circle-right--arrow {
-  background: url("../img/Arrow.svg") no-repeat 0 0/contain;
+  background: url("../img//Arrow.svg") no-repeat 0 0/contain;
   width: 1.6rem;
   height: 1.6rem;
   margin: 2.2rem auto;
@@ -338,7 +338,7 @@ input {
 }
 
 .main-page__circle-left--arrow {
-  background: url("../img/ArrowLeft.svg") no-repeat 0 0/contain;
+  background: url("../img//ArrowLeft.svg") no-repeat 0 0/contain;
   width: 1.6rem;
   height: 1.6rem;
   margin: 2.2rem auto;
