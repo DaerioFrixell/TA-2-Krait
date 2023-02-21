@@ -1,0 +1,170 @@
+@import "./generalStyles.scss";
+
+.main-page {
+  z-index: 0;
+  position: relative;
+  margin-top: 2rem;
+  height: 56rem;
+  background-color: $DesignGrey;
+  font-family: Prata;
+
+  @media (max-width: $desktopAdaptiveSmall) {
+    overflow: hidden;
+  }
+
+  &__offer {
+    padding-top: 17.6rem;
+    padding-left: 12.6rem;
+
+    @media (max-width: $desktopAdaptiveSmallest) {
+      padding-left: 10vw;
+    }
+
+    &--discount {
+      font-size: 2rem;
+    }
+
+    &--text {
+      font-size: 5rem;
+      padding-top: 3rem;
+      z-index: 2;
+
+      @media (max-width: $desktopAdaptiveSmallest) {
+        font-size: 3rem;
+      }
+    }
+
+    &--btn {
+      width: 200px;
+      height: 54px;
+      background: #303030;
+      border: none;
+      color: #fff;
+      font-family: inter;
+      font-size: 1.4rem;
+      margin-top: 7.4rem;
+      transition: $transition;
+
+      &:hover {
+        cursor: pointer;
+        background: #505050;
+      }
+
+      &:active {
+        background: #000000;
+      }
+
+    }
+  }
+
+  &__handler {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1.6rem);
+    bottom: 24px;
+    left: 48%;
+
+    &--btn {
+      background-image: url("../../img/btn-checkout.svg");
+      background-repeat: no-repeat;
+      width: 8px;
+      height: 8px;
+      transition: $transition;
+
+      &:hover {
+        background-image: url("../../img/btn-active.svg");
+
+      }
+    }
+
+    &--btnactive {
+      background-image: url("../../img/btn-active.svg");
+      background-repeat: no-repeat;
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+
+  &__circle-right {
+    position: absolute;
+    top: 253px;
+    right: 4.3rem;
+
+    width: 5.4rem;
+    height: 5.4rem;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    &:hover &--arrow {
+      transform: translateX(1rem);
+    }
+
+    @media (max-width: $desktopAdaptiveSmallest) {
+      display: none;
+    }
+
+    &--arrow {
+      background-image: url("../../img/Arrow.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin: 2.2rem auto;
+
+      transition: $transition;
+
+
+    }
+  }
+
+  &__circle-left {
+    position: absolute;
+    top: 253px;
+    left: 4.3rem;
+
+    width: 5.4rem;
+    height: 5.4rem;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    &:hover &--arrow {
+      transform: translateX(-1rem);
+    }
+
+
+    @media (max-width: $desktopAdaptiveSmallest) {
+      display: none;
+    }
+
+    &--arrow {
+      background-image: url("../../img/ArrowLeft.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin: 2.2rem auto;
+
+      transition: $transition;
+    }
+  }
+
+
+  &--photo {
+    position: absolute;
+    z-index: -1;
+    right: 36px;
+    bottom: 0;
+  }
+}
+
+.brill {
+  left: 0px;
+  bottom: 0;
+}
+
+.big-brill {
+  @media (max-width: $desktopAdaptiveSmall) {
+    display: none;
+  }
+}

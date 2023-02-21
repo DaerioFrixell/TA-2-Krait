@@ -1,0 +1,53 @@
+@import "./generalStyles.scss";
+
+.cathegory {
+  &__card-list {
+    display: grid;
+    grid-template-columns: repeat(6, 20rem);
+    gap: 2rem;
+
+    @media (max-width: $desktopAdaptiveMiddle) {
+      display: grid;
+      width: 60rem;
+      margin: auto;
+      grid-template-columns: repeat(3, 20rem);
+    }
+
+    @media (max-width: $desktopAdaptiveSmallest) {
+      display: flex;
+      flex-direction: column;
+      width: 20rem;
+      margin: auto;
+    }
+
+    &__item {
+      position: relative;
+      background-color: $DesignGrey;
+      border: 1px solid black;
+      font-family: inter;
+      font-size: 1.6rem;
+      height: 260px;
+
+      &:hover &--photo {
+        transform: scale(120%);
+      }
+
+      &--photo {
+        position: absolute;
+        top: 61px;
+        left: 36px;
+        transition: .4s ease;
+      }
+
+      &--name {
+        width: 14.8rem;
+        margin: auto;
+        padding: 0 1.2rem;
+        padding-top: 21.8rem;
+
+
+        text-align: center;
+      }
+    }
+  }
+}

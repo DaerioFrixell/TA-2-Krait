@@ -1,0 +1,212 @@
+@import "generalStyles.scss";
+
+@mixin icons {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-repeat: no-repeat;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: inherit;
+}
+
+.header {
+  width: 100%;
+  margin: auto;
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $desktopDesign) {
+      height: 7.5rem;
+    }
+
+    &__item {
+      display: flex;
+
+      @media (max-width: $desktopAdaptiveSmallest) {
+        display: none;
+      }
+
+      &--icon {
+        @include icons;
+        margin-right: .5rem;
+
+        &:hover {
+          @include opacityHover;
+        }
+      }
+
+      &__icons {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 10rem;
+
+        &--item {
+          &:hover {
+            opacity: .5;
+          }
+        }
+
+        &--item-counter {
+          position: absolute;
+          left: 14px;
+          bottom: 8px;
+          border-radius: 50%;
+          width: 19px;
+          height: 19px;
+          text-align: center;
+          padding-top: .4rem;
+          font-size: 10px;
+          font-weight: bold;
+          background-color: #E46942;
+        }
+      }
+
+      &__logo {
+        width: 183px;
+
+        &-name {
+          font-family: Parta;
+          font-size: 3.2rem;
+          color: #E1A661;
+        }
+
+        .ln-store {
+          color: #303030;
+        }
+
+        &-desc {
+          font-family: "Roboto Condensed";
+          letter-spacing: 0.15em;
+          color: #909090;
+
+          @media (max-width: $desktopAdaptiveSmallest) {
+            display: none;
+          }
+        }
+      }
+
+      &__auth {
+        &-item {
+          padding: 0 1rem;
+
+          &:hover {
+            @include opacityHover;
+          }
+        }
+
+        &-item:last-child {
+          border-left: 1px solid black;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    background-color: $DesignGrey;
+    display: flex;
+    height: 6.2rem;
+
+    &__menu {
+      padding-left: 5rem;
+      padding-right: 11rem;
+      width: 837px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: $desktopAdaptiveSmall) {
+        padding: 0 2rem;
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: repeat(4, 8rem);
+      }
+
+      @media (max-width: $desktopAdaptiveSmallest) {
+        display: none;
+      }
+
+      &--item {
+        &:hover {
+          @include opacityHover;
+        }
+      }
+    }
+
+    &__search {
+      border-left: 1px solid #F0F0F0;
+      width: 30.3rem;
+
+      &__inner {
+        margin-top: 2.2rem;
+        margin-left: 2rem;
+
+        &--icon {
+          padding-left: 3.6rem;
+        }
+
+        &--text {
+          font-family: Inter;
+          color: #A2A2A2;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $desktopDesign) {
+    height: 13.7rem;
+  }
+
+  @media (max-width: $desktopAdaptiveMiddle) {
+    width: 100%;
+  }
+
+}
+
+.icon-location {
+  background-image: url(../../img/location.svg);
+  background-repeat: no-repeat;
+}
+
+.icon-location-arrow {
+  background-image: url(../../img/location-arrow.svg);
+  background-repeat: no-repeat;
+  margin-top: .5rem;
+  margin-right: 0;
+  margin-left: 1rem;
+  width: 10px;
+  height: 10px;
+}
+
+.icon-phone {
+  background-image: url(../../img/phone.svg);
+}
+
+.icon-search {
+  @include icons;
+  background-image: url(../../img/search.svg);
+}
+
+.icon-favorite {
+  @include icons;
+  width: 1.8rem;
+  background-image: url(../../img/coolicon.svg);
+}
+
+.icon-chart {
+  @include icons;
+  background-image: url(../../img/chart.svg);
+}
+
+.icon-bag {
+  @include icons;
+  background-image: url(../../img/bag.svg);
+}

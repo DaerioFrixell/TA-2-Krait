@@ -1,0 +1,51 @@
+@import "./all/generalStyles.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+@mixin designMediaQuerie {
+  @media (max-width: $desktopDesign) {
+    @content;
+  }
+}
+
+h2 {
+  margin-top: 12rem;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  font-family: Prata;
+  line-height: 40px;
+}
+
+body {
+  background-color: #fff;
+  font-family: inter;
+  width: 80vw;
+  margin: auto;
+  cursor: default;
+
+  @include designMediaQuerie {
+    width: 130rem;
+  }
+
+  @media (max-width: $desktopAdaptiveMiddle) {
+    background-color: #fff;
+    width: 80vw;
+    margin: auto;
+  }
+}
+
+
+@import "all/generalStyles.scss";
+
+@import "all/header.scss";
+@import "all/mainPage.scss";
+@import "all/cathegory.scss";
+@import "all/footer.scss";

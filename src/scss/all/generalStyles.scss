@@ -1,0 +1,20 @@
+// Screen Size
+$desktopDesign: 1920px;
+$desktopAdaptiveMiddle: 1500px;
+$desktopAdaptiveSmall: 1200px;
+$desktopAdaptiveSmallest: 900px;
+
+// color
+
+$deskptopDesignColor: rgb(229, 79, 79);
+$deskptopMSColor: rgb(184, 229, 79);
+$DesignGrey: #F8F8F8;
+
+// hover
+
+$transition: .2s ease;
+
+@mixin opacityHover {
+  opacity: .5;
+  transition: $transition;
+}

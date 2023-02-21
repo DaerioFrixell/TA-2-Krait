@@ -6,10 +6,6 @@
 /coverage
 
 # production
-/config
-/src
-/task
-/gulpfile.js
 
 # misc
 .DS_Store
